@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Ahorcado</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<center>
+    <h1>Configuración del Juego de Ahorcado</h1>
+</center>
+
+<center>
+<h2>Longitud de la palabra: </h2>
+
+<form action="longitud" method="post">
+    <input type="hidden" name="action" value="palabra">
+    <label for="palabra">
+    </label>
+    <input type="text" id="palabra" name="palabra" maxlength="1" required>
+</form>
+
+<h1>
+</h1>
+
+
+<h2>Número máximo de intentos: </h2>
+<form action="intentos" method="post">
+    <input type="hidden" name="action" value="try">
+    <input type="text" id="try" name="try" maxlength="1" required>
+</form>
+
+
+<h2>Tema del juego: </h2>
+<form action="tema" method="post">
+    <select name="adivina" id="adivina">
+        <option value="Animales">Animales</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Países">Países</option>
+    </select>
+</form>
+
+<h1>
+</h1>
+
+<button type="submit">Adivinar</button>
+
+</center>
